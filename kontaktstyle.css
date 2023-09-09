@@ -1,0 +1,229 @@
+
+
+  .contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 420px) {
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  *{
+    margin: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(17, 109, 109) -15.1%, rgb(4, 11, 68) 71.5%);
+    color: #fff;
+}
+
+/* Rest of your CSS styles */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    
+    margin: auto;
+    text-align: center;
+
+}
+p{font-size: 12pt;}
+
+#solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.planet {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#sun {
+    background-image: url('images/sun.png');
+}
+
+#mercury {
+    background-image: url('images/mercury.png');
+}
+
+#venus {
+    background-image: url('images/venus.png');
+}
+
+#earth {
+    background-image: url('images/earth.png');
+}
+
+#mars {
+    background-image: url('images/mars.png');
+}
+#jupiter {
+    background-image: url('images/jupiter.png');
+
+}
+#saturn {
+    background-image: url('images/saturn.png');
+
+}
+#uran {
+    background-image: url('images/uran.png');
+
+}
+#neptun {
+    background-image: url('images/Neptune.png');
+
+}
+/* Add more styling as needed */
+/* Add this to styles.css */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+/* styles.css */
+
+/* Dodavanje CSS za raspored elemenata u zaglavlju */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: linear-gradient(to right, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%); /* Promenite boju pozadine prema vašim željama */
+    color: #fff; /* Promenite boju teksta prema vašim željama */
+    padding: 10px;
+}
+
+
+
+img {
+    width: 100px; /* Prilagodite veličinu loga prema vašim potrebama */
+}
+
+#language-buttons {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-right: 10px;
+    background-color: #555; /* Promenite boju dugmadi prema vašim željama */
+    color: #fff; /* Promenite boju teksta na dugmadima prema vašim željama */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#contact {
+    margin-left: 10px;
+}
+/* styles.css */
+
+.diagonal-grid {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+   
+    gap: 20px; /* Opciono: dodajte razmak između slika */
+}
+
+.lijeva-strana{
+    float: left;
+    width: 50%;
+}
+.lijeva-strana img{
+    margin-top: 7%;
+    margin-left: 15%;
+    width: 65%;
+    height: 65vh;
+}
+.desna-strana{
+    float: right;
+    width: 50%;
+}
+.desna-strana p {
+    margin-top: 7%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+
+.rotate:hover {
+    animation: rotate 50s linear infinite;
+}
+
+/* Definišite CSS ključne okvire za rotaciju */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotate2 {
+    animation: rotate 50s linear infinite;
+}
+
+/* Definišite CSS ključne okvire za rotaciju */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

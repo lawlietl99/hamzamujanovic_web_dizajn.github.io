@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kontaktstyle.css" />
+    <title>Solarni Sistem</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo na levoj gornjoj strani -->
+      <img src="images/Logo_Solar_System.png" alt="Solar System Logo" />
+
+      <!-- Ime sajta na sredini -->
+      <h1>SOLARNI SISTEM</h1>
+
+      <!-- Dugmad za dva različita jezika na desnoj gornjoj strani -->
+      <div id="language-buttons">
+        <button id="language-english" onclick="loadLanguage('english')">
+          English
+        </button>
+        <button id="language-spanish" onclick="loadLanguage('srpski')">
+          Srpski
+        </button>
+      </div>
+    </header>
+
+    <main id="solar-system" class="diagonal-grid">
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="post">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ime i prezime"
+          />
+          <span id="first_name_error" style="color: red"></span>
+
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <span id="email_error" style="color: red"></span>
+
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Poruka"
+          ></textarea>
+          <span id="message_error" style="color: red"></span>
+
+          <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+      </div>
+    </main>
+    <a href="index_eng.html" class="back-link"
+      >&larr; Nazad na naš solarni sistem</a
+    >
+    <script src="script.js"></script>
+  </body>
+</html>

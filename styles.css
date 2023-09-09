@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(17, 109, 109) -15.1%, rgb(4, 11, 68) 71.5%);
+    color: #fff;
+}
+
+/* Rest of your CSS styles */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    
+    margin: auto;
+    text-align: center;
+
+}
+p{font-size: 12pt;}
+
+#solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.planet {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#sun {
+    background-image: url('images/sun.png');
+}
+
+#mercury {
+    background-image: url('images/mercury.png');
+}
+
+#venus {
+    background-image: url('images/venus.png');
+}
+
+#earth {
+    background-image: url('images/earth.png');
+}
+
+#mars {
+    background-image: url('images/mars.png');
+}
+#jupiter {
+    background-image: url('images/jupiter.png');
+
+}
+#saturn {
+    background-image: url('images/saturn.png');
+
+}
+#uran {
+    background-image: url('images/uran.png');
+
+}
+#neptun {
+    background-image: url('images/Neptune.png');
+
+}
+/* Add more styling as needed */
+/* Add this to styles.css */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+/* styles.css */
+
+/* Dodavanje CSS za raspored elemenata u zaglavlju */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: linear-gradient(to right, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%); /* Promenite boju pozadine prema vašim željama */
+    color: #fff; /* Promenite boju teksta prema vašim željama */
+    padding: 10px;
+}
+
+
+
+img {
+    width: 100px; /* Prilagodite veličinu loga prema vašim potrebama */
+}
+
+#language-buttons {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-right: 10px;
+    background-color: #555; /* Promenite boju dugmadi prema vašim željama */
+    color: #fff; /* Promenite boju teksta na dugmadima prema vašim željama */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#contact {
+    margin-left: 10px;
+}
+/* styles.css */
+
+.diagonal-grid {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+   
+    gap: 20px; /* Opciono: dodajte razmak između slika */
+}
+
+.lijeva-strana{
+    float: left;
+    width: 50%;
+}
+.lijeva-strana img{
+    margin-top: 7%;
+    margin-left: 15%;
+    width: 79%;
+    height: 65vh;
+}
+.desna-strana{
+    float: right;
+    width: 50%;
+}
+.desna-strana p {
+    margin-top: 7%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+
+.rotate:hover {
+    animation: rotate 50s linear infinite;
+}
+
+/* Definišite CSS ključne okvire za rotaciju */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotate2 {
+    animation: rotate 50s linear infinite;
+}
+
+/* Definišite CSS ključne okvire za rotaciju */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+    height: auto;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.flex-start {
+    align-self: flex-start;
+}
+
+.planet-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(50, 96, 135), rgb(4, 4, 59));
+}
+
+.main-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sun-div {
+    margin-left: -15rem;
+}
+
+.sun-div img {
+    overflow-x: hidden;
+    width: 50rem;
+}
+
+.mercury-venus {
+    justify-content: space-between;
+    width: 15rem;
+    height: 27rem;
+}
+
+.mercury-venus div:first-child img {
+    width: 11rem;
+}
+
+.mercury-venus div:last-child img {
+    width: 8rem;
+}
+
+.moon-earth-mars {
+    margin-top: 10rem;
+    width: 16rem;
+}
+
+.moon-earth-mars div:first-child img {
+    width: 3rem;
+}
+
+.moon-earth-mars div:nth-child(2) img {
+    width: 12rem;
+}
+
+.moon-earth-mars div:last-child img {
+    width: 6.5rem;
+}
+
+.saturn-jupiter {
+    margin-bottom: 22rem;
+    width: 25rem;
+}
+
+.saturn-jupiter div:first-child img {
+    width: 18rem;
+}
+
+.saturn-jupiter div:last-child img {
+    width: 19rem;
+}
+
+.neptune-uranus {
+    justify-content: space-between;
+    height: 30rem;
+    width: 16rem;
+    margin-bottom: 10rem;
+}
+
+.neptune-uranus div:first-child img,
+.neptune-uranus div:last-child img {
+    width: 8.5rem;
+}
+
+.neptune-uranus div:nth-child(2) img {
+    width: 3.4rem;
+}

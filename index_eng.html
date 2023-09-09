@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Solar System</title>
+</head>
+<body>
+    <header>
+        <!-- Logo na levoj gornjoj strani -->
+        <img src="images/Logo_Solar_System.png" alt="Solar System Logo">
+
+        <!-- Ime sajta na sredini -->
+        <h1>SOLAR SYSTEM</h1>
+
+        <!-- Dugmad za dva različita jezika na desnoj gornjoj strani -->
+        <div id="language-buttons">
+            <button id="language-english" onclick="loadLanguage('english')">English</button>
+            <button id="language-spanish" onclick="loadLanguage('srpski')">Srpski</button>
+
+            <!-- Kontakt pored dugmadi -->
+            <a href="kontakt_eng.html" id="contact-button">Contact</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <div class="sun-div">
+            <div class="planet-box">
+                <a href="sun_eng.html" class="rotate">
+                    <img src="images/sun.png" alt="sun">
+                </a>
+                <span>SUN</span>
+            </div>
+        </div>
+
+        <div class="mercury-venus">
+            <div class="planet-box flex-end">
+                <span>VENUS</span>
+                <a href="venus_eng.html" class="rotate">
+                    <img src="images/venus.png" alt="venus">
+                </a>
+            </div>
+            <div class="planet-box flex-start">
+                <a href="mercury_eng.html" class="rotate">
+                    <img src="images/mercury.png" alt="mercury">
+                </a>
+                <span>MERCURY</span>
+            </div>
+        </div>
+
+        <div class="moon-earth-mars">
+            <div class="planet-box">
+                <span>MOON</span>
+                <a href="moon_eng.html" class="rotate">
+                    <img src="images/moon.png" alt="moon">
+                </a>
+            </div>
+            <div class="planet-box flex-start">
+                <a href="earth_eng.html" class="rotate">
+                    <img src="images/earth.png" alt="earth">
+                </a>
+                <span>EARTH</span>
+            </div>
+            <div class="planet-box flex-end">
+                <a href="mars_eng.html" class="rotate">
+                    <img src="images/mars.png" alt="mars">
+                </a>
+                <span>MARS</span>
+            </div>
+        </div>
+
+        <div class="saturn-jupiter">
+            <div class="planet-box flex-end">
+                <a href="saturn_eng.html" class="rotate">
+                    <img src="images/saturn.png" alt="saturn">
+                </a>
+                <span>SATURN</span>
+            </div>
+            <div class="planet-box flex-start">
+                <a href="jupiter_eng.html" class="rotate">
+                    <img src="images/jupiter.png" alt="jupiter">
+                </a>
+                <span>JUPITER</span>
+            </div>
+        </div>
+
+        <div class="neptune-uranus">
+            <div class="planet-box">
+                <span>NEPTUNE</span>
+                <a href="neptun_eng.html" class="rotate">
+                    <img src="images/neptune.png" alt="neptune">
+                </a>
+            </div>
+           
+            <div class="planet-box flex-start">
+                <a href="uran_eng.html"  class="rotate">
+                    <img src="images/uranus.png" alt="uranus">
+                </a>
+                <span>URANUS</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
